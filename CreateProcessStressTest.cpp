@@ -49,7 +49,7 @@ int main()
                 nullptr,
                 nullptr,
                 FALSE,
-                NORMAL_PRIORITY_CLASS | CREATE_NO_WINDOW,
+                NORMAL_PRIORITY_CLASS | DETACHED_PROCESS, // Detached skips conhost.exe
                 nullptr,
                 nullptr,
                 &startupInfo,
@@ -119,7 +119,7 @@ int main()
                 nullptr,
                 nullptr,
                 FALSE,
-                NORMAL_PRIORITY_CLASS | CREATE_NO_WINDOW,
+                NORMAL_PRIORITY_CLASS | DETACHED_PROCESS, // Detached skips conhost.exe
                 nullptr,
                 nullptr,
                 &startupInfo,
